@@ -11,7 +11,10 @@ Example 1 - Single create element
     var helloWorld = React.createElement('h1',{},"Hello world");   
     //With attributes
     var helloWorld2 = React.createElement('a',{href : "www.google.com"},"Hello world");      
-
+    var listElements = React.createElement('ul',{},
+                            React.createElement("li",{},"Angular"),
+                            React.createElement("li",{},"React"),
+                            );
     //creates the actual html code. two inputs.1- the reactelement, 2- the parent element under whihc it is to be created 
     ReactDOM.render(helloWorld,document.getElementById('react-app'))
   </script>
